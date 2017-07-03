@@ -1,0 +1,26 @@
+body{
+  background: url(images/bg.png)no-repeat center center fixed;
+ background-size: 100%;
+}
+.boat2{
+  width: 400px;
+  position:absolute; bottom: 160px; left: 800px;z-index: 1;
+
+}
+.cabbage{
+  width: 150px;
+position:absolute; bottom: 290px; right: 290px;z-index: 1;
+}
+.sheep{
+  width: 150px;
+  position:absolute; bottom: 300px; right: 180px;z-index: 1;
+}
+.wolf{
+  width: 300px;
+  position:absolute; bottom: 270px; right: -80px;z-index: 1;
+}
+img {
+  max-width:100%;
+ height:auto;
+ max-height:100%;
+}
