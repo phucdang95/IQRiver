@@ -15,12 +15,12 @@
             position:relative;
             margin-top:2%;
            font-size:100px;
-            text-shadow: -2px 0 red, 0 2px red, 2px 0 red, 0 -2px red;
+            text-shadow: -2px 0 blue, 0 2px red, 2px 0 blue, 0 -2px blue;
             font-family:'Lucida Handwriting';
             color:black;
         }
-        a {
-         margin-top:3%;
+        #playButton {
+         margin-top:1%;
         text-decoration:none;
         padding:5px 30px 5px 30px;
          color: #31302B;
@@ -37,17 +37,24 @@
 	    -moz-transition: all ease 0.8s;
 	    transition: all ease 0.8s;
         }
-         a:hover {
-             border: 3px solid #ea2626;
-             box-shadow: inset 0 100px 0 0 #ea2626;
+         #playButton:hover {
+             border: 3px solid #0e2ef3;
+             box-shadow: inset 0 100px 0 0 #0e2ef3;
              color: #FFF;
              
            }
         #sun {
         
-        margin-top:50px;
+        margin-top:20px;
         }
-       
+        #box {
+         padding:10px;
+         border: 2px red solid;
+        
+        }
+        p {
+         font-size:20px;
+         }
       
     </style>
 </head>
@@ -55,10 +62,14 @@
     
         <h1>IQ River Crossing</h1>
 
-    <div id="link">
-        <a id="playButton" href="board.html">PLAY</a>
-    </div>
-    
+    <form action="start.php" method="post">
+        <p>Type your name below and PLAY</p>
+        <input id="box" type="text" name="name" /><br /><br />
+        <input id="playButton" type="submit" name="play" value="PLAY" /><br /><br />
+      
+</form>
+
+   
    <div id="sun">
     <img src="images/sun.gif" alt="">
     </div>
