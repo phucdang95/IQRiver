@@ -1,0 +1,37 @@
+
+<?php 
+session_start();
+ $_SESSION['name'] = $_POST['name']; 
+  ?>
+<html>
+    <head>
+       <link rel='stylesheet' type='text/css' href='style.css' />
+
+    <title>IQ River Crossing</title>
+    </head>
+    <body>   
+        
+   <?php 
+    $name = $_POST['name'] ;
+    
+    echo '<h1>Welcome,' . " <span>$name</span></h1>";
+   
+     ?> 
+    <div class="image">
+ <img class="boat2" src="images/sailing.png" alt="">
+ <a href="game2.php"><img class="cabbage" src="images/cabbage.png" alt=""></a>
+ <a href="game3.php"><img class="sheep" src="images/sheep.png" alt=""></a>
+<a href="game4.php"><img class="wolf" src="images/wolf.png" alt=""></a>
+  
+  
+  </div> 
+        
+        <p id="inst">Please help the man in the boat to move the wolf, the sheep and the cabbage to the other side of the river.<Br>
+   Wolf eat sheep, sheep eat cabbage when no man around. </p>
+        
+    </body>
+    
+</html>
+
+
+
