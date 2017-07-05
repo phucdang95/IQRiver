@@ -5,20 +5,20 @@ body{
 }
 .boat2{
   width: 250px;
-  position:absolute; bottom: 130px; left: 850px;z-index: 1;
+  position:absolute; bottom: 130px; left:800px;z-index: 1;
 
 }
 .cabbage{
   width: 80px;
-position:absolute; bottom: 220px; right: 120px;z-index: 1;
+position:absolute; bottom: 220px; right: 140px;z-index: 1;
 }
 .sheep{
   width: 80px;
-  position:absolute; bottom: 220px; right: 50px;z-index: 1;
+  position:absolute; bottom: 220px; right: 80px;z-index: 1;
 }
 .wolf{
   width: 200px;
-  position:absolute; bottom: 190px; right: -120px;z-index: 1;
+  position:absolute; bottom: 190px; right: -90px;z-index: 1;
 }
 img {
   max-width:100%;
