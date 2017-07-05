@@ -1,11 +1,10 @@
-
 <?php 
 session_start();
 
-  ?>
+ ?>
 <html>
     <head>
-       <link rel='stylesheet' type='text/css' href='style.css' />
+       <link rel='stylesheet' type='text/css' href='boatsh_c.css' />
 
     <title>IQ River Crossing</title>
     </head>
@@ -13,14 +12,13 @@ session_start();
         
    <?php 
     $name = $_SESSION['name'] ;
-    
     echo '<h1>Welcome,' . " <span>$name</span></h1>";
    
      ?> 
     <div class="image">
- <a href="boat.php"><img class="boat2" src="images/sailing.png" alt=""></a>
- <a href="game2.php"><img class="cabbage" src="images/cabbage.png" alt=""></a>
- <a href="sheep.php"><img class="sheep" src="images/sheep.png" alt=""></a>
+ <a href="boat2.php"><img class="boat2" src="images/sailing.png" alt=""></a>
+<a href=""><img class="cabbage" src="images/cabbage.png" alt=""></a>
+<a href="c_boatsh_sh.php"><img class="sheep" src="images/sheep.png" alt=""></a>
 <a href=""><img class="wolf" src="images/wolf.png" alt=""></a>
   
   

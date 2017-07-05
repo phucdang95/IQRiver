@@ -5,16 +5,12 @@ body{
 }
 
 @-webkit-keyframes mymove {
-    0%   {right: 850px;}
-    80%  {right:280px;}
-    100% {right:280px;}
+    0%   {right: 340px;}
+    80%  {right:850px;}
+    100% {right:850px;}
     
 }
-@-webkit-keyframes cabbagemove {
-    0%   {right:850px;}
-    80%  {right:280px;}
-    100% {right:200px;}
-}
+
 .boat2{
   width: 350px;
   position:absolute; bottom: 170px; right: 340px; z-index: 1;
@@ -25,14 +21,14 @@ body{
 
 .cabbage{
   width: 150px;
-position:absolute; bottom: 250px; right: 330px;  z-index: 0;
- animation: cabbagemove 5s;
+position:absolute; bottom: 250px; right: 230px;  z-index: 1;
+animation: cabbagemove 5s;
  animation-fill-mode: forwards;
 }
 
 .sheep{
   width: 150px;
-  position:absolute; bottom: 270px; right: 100px; z-index: 1;
+  position:absolute; bottom: 270px; right: 1300px; z-index: 1;
 }
 .wolf{
   width: 250px;

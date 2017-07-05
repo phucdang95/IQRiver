@@ -1,13 +1,17 @@
+<?php 
+session_start();
+
+ ?>
 <html>
     <head>
-       <link rel='stylesheet' type='text/css' href='style.css' />
+       <link rel='stylesheet' type='text/css' href='style4.css' />
 
     <title>IQ River Crossing</title>
     </head>
     <body>   
         
    <?php 
-    $name = $_POST['name'] ;
+    $name = $_SESSION['name'] ;
     echo '<h1>Welcome,' . " <span>$name</span></h1>";
    
      ?> 

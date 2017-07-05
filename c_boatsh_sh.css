@@ -10,7 +10,7 @@ body{
     100% {right:280px;}
     
 }
-@-webkit-keyframes cabbagemove {
+@-webkit-keyframes move {
     0%   {right:850px;}
     80%  {right:280px;}
     100% {right:200px;}
@@ -25,14 +25,16 @@ body{
 
 .cabbage{
   width: 150px;
-position:absolute; bottom: 250px; right: 330px;  z-index: 0;
- animation: cabbagemove 5s;
- animation-fill-mode: forwards;
+position:absolute; bottom: 250px; right: 1150px;  z-index: 1;
+;
+
 }
 
 .sheep{
-  width: 150px;
-  position:absolute; bottom: 270px; right: 100px; z-index: 1;
+  width: 120px;
+  position:absolute; bottom: 270px; right: 850px; z-index: 0;
+  animation: move 5s;
+  animation-fill-mode: forwards;
 }
 .wolf{
   width: 250px;

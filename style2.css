@@ -27,14 +27,10 @@ body{
 .cabbage{
   width: 150px;
 position:absolute; bottom: 250px; right: 330px;  z-index: 0;
- animation: cabbagemove 3s;
+animation: cabbagemove 5s;
  animation-fill-mode: forwards;
 }
-.cabbage{
-    animation: cabbagemove 5s;
- animation-fill-mode: forwards;
-    
-}
+
 .sheep{
   width: 150px;
   position:absolute; bottom: 270px; right: 100px; z-index: 1;

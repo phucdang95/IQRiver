@@ -10,11 +10,7 @@ body{
     100% {right:280px;}
     
 }
-@-webkit-keyframes cabbagemove {
-    0%   {right:850px;}
-    80%  {right:280px;}
-    100% {right:200px;}
-}
+
 .boat2{
   width: 350px;
   position:absolute; bottom: 170px; right: 340px; z-index: 1;
@@ -25,9 +21,7 @@ body{
 
 .cabbage{
   width: 150px;
-position:absolute; bottom: 250px; right: 330px;  z-index: 0;
- animation: cabbagemove 5s;
- animation-fill-mode: forwards;
+position:absolute; bottom: 250px; right: 1150px;  z-index: 1;
 }
 
 .sheep{

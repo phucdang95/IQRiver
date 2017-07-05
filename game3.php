@@ -13,11 +13,10 @@ session_start();
    <?php 
     $name = $_SESSION['name'] ;
     echo '<h1>Welcome,' . " <span>$name</span></h1>";
-   
      ?> 
     <div class="image">
  <img class="boat2" src="images/sailing.png" alt="">
-<a href=""><img class="cabbage" src="images/cabbage.png" alt=""></a>
+ <a href="game4.php"><img class="cabbage" src="images/cabbage.png" alt=""></a>
 <a href=""><img class="sheep" src="images/sheep.png" alt=""></a>
 <a href=""><img class="wolf" src="images/wolf.png" alt=""></a>
   
