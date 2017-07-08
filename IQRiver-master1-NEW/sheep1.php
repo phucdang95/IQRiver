@@ -1,31 +1,31 @@
 
 <html>
     <head>
-       <link rel='stylesheet' type='text/css' href='sheep1.css' />
+       <link rel='stylesheet' type='text/css' href='css/sheep1.css' />
 
     <title>IQ River Crossing</title>
     </head>
-    <body>   
-        
-   
-    <div class="image">        
+    <body>
+
+
+    <div class="image">
  <a href="boatback.php"><img class="boat2" src="images/sailing.png" alt=""></a>
  <a href=""><img class="cabbage" src="images/cabbage.png" alt=""></a>
  <a href=""><img class="sheep" src="images/sheep.png" alt=""></a>
 <a href=""><img class="wolf" src="images/wolf.png" alt=""></a>
-  
-  
-  </div> 
-        
-        
+
+
+  </div>
+
+
         <div class="buttonDIV">
   <a class="testbutton" href="start.html">Home</a>
   <a class="testbutton" href="game1.php">Restart</a>
  <a class="testbutton" href="#popupMenu1">Hints</a>
   <a class="testbutton" href="http://sustainability.lehigh.edu/sites/sustainability.lehigh.edu/files/Trash.png">Quit</a>
         </div>
-        
-        
+
+
 <div id="popupMenu1" class="overlay">
 	<div class="popupMenu">
 		<h2>How to play:</h2>
@@ -39,10 +39,11 @@
 
 </div>
 </div>
-        
+
+<div id="element" class="pretty">You've done it!!!
+Congratulation!!
+</div>
+
     </body>
-    
+
 </html>
-
-
-
