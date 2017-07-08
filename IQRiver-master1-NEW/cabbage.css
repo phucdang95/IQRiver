@@ -1,0 +1,176 @@
+
+body{
+  background: url(images/bg.png)no-repeat center center fixed;
+ background-size: 100%;
+ background-size:cover;
+}
+@-webkit-keyframes mymove {
+    0%   {right: 340px;}
+    80%  {right:1000px;}
+    100% {right:1000px;}
+    
+}
+@-webkit-keyframes cabbagemove {
+    0%   {right: 340px;}
+    80%  {right:1000px;}
+    100% {right:1450px;}
+        
+}
+.boat2{
+    width: 250px;
+  position:absolute; bottom: 200px; right: 340px; z-index: 1;
+  animation: mymove 5s;
+  animation-fill-mode: forwards;
+  }
+.cabbage{
+width: 130px;
+position:absolute; bottom: 250px; right: 230px;  z-index: 0;
+animation: cabbagemove 5s;
+  animation-fill-mode: forwards;
+}
+
+.sheep{
+  width: 120px;
+  position:absolute; bottom: 260px; right: 130px; z-index: 1;
+  animation: sheepmove 5s;
+  animation-fill-mode: forwards;
+}
+.wolf{
+ width: 200px;
+  position:absolute; bottom: 245px; right: 1300px; z-index: 1;
+}
+
+.img {
+  max-width:100%;
+ height:auto;
+ max-height:100%;
+}
+
+   
+    
+
+.sun{
+width: 80px;
+position: absolute;right: 0;
+}
+
+
+@keyframes fade {
+  0%,97% { opacity: 1 }
+  100% { opacity: 0 }
+}
+ @keyframes cssAnimation {
+     to {
+         width:0;
+         height:0;
+         overflow:hidden;
+     }
+ }
+ @-webkit-keyframes cssAnimation {
+     to {
+         width:0;
+         height:0;
+         visibility:hidden;
+     }
+ }
+
+/*  Rules ends  */
+
+/*  Buttons starts  */
+.buttonDIV{
+  
+ display: flex;
+  justify-content: center;
+  
+}
+.testbutton {
+  color: #FFFFFF !important;
+  font-size: 23px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px #DEC666;
+  box-shadow: 2px 2px 1px #F9D061;
+  padding: 9px 11px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #FFFFFF;
+  background: #63B8EE;
+  background: linear-gradient(top,  #EEA94F,  #CFBA68);
+  background: -ms-linear-gradient(top,  #EEA94F,  #CFBA68);
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEA94F), to(#CFBA68));
+  background: -moz-linear-gradient(top,  #EEA94F,  #CFBA68);
+  text-decoration: none;
+}
+.testbutton:hover {
+  color: #FFFFFF !important;
+  background: #468CCF;
+  background: linear-gradient(top,  #CF1313,  #EE3939);
+  background: -ms-linear-gradient(top,  #CF1313,  #EE3939);
+  background: -webkit-gradient(linear, left top, left bottom, from(#CF1313), to(#EE3939));
+  background: -moz-linear-gradient(top,  #CF1313,  #EE3939);
+  text-align:center;
+}
+/*  Buttons ends  */
+
+/*  Popupmenu starts  */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupMenu {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popupMenu h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+.popupMenu .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popupMenu .close:hover {
+  color: #06D85F;
+}
+.popupMenu .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .container{
+    width: 70%;
+  }
+  .popupMenu{
+    width: 70%;
+  }
+}
+/*  Popupmenu ends  */
+#hint{
+    font-weight:bold;
+  color: red;
+}
