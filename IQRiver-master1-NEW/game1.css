@@ -5,10 +5,9 @@ body{
 }
 .boat2{
   width: 250px;
-  position:absolute; bottom: 170px; right: 340px; z-index: 1;
+  position:absolute; bottom: 190px; right: 340px; z-index: 1;
 
 }
-
 .cabbage{
   width: 130px;
 position:absolute; bottom: 250px; right: 230px;  z-index: 1;
@@ -29,7 +28,11 @@ position:absolute; bottom: 250px; right: 230px;  z-index: 1;
  height:auto;
  max-height:100%;
 }
-
+span {
+    color:red;
+    text-transform: uppercase;
+    
+}
    
     
 

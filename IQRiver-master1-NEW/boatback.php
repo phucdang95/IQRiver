@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <html>
     <head>
         <link rel='stylesheet' type='text/css' href='boatback.css' />
@@ -6,7 +8,10 @@
     <title>IQ River Crossing</title>
     </head>
     <body>   
-        
+        <?php
+        echo  "<h1> WELCOME, <span>" . $_SESSION['n']."</span></h1>";
+       
+        ?>
    
     <div class="image">        
  <a href="boatback.php"><img class="boat2" src="images/sailing.png" alt=""></a>

@@ -1,11 +1,19 @@
-
+<?php
+session_start();
+?>
 <html>
     <head>
-       <link rel='stylesheet' type='text/css' href='game1.css' />
+        <link rel='stylesheet' type='text/css' href='game1.css' />
 
     <title>IQ River Crossing</title>
     </head>
     <body>   
+        
+        <?php
+        $_SESSION['n'] = $_POST['name'];
+        
+        echo  "<h1> WELCOME, <span>" . $_SESSION['n']."</span></h1>"; 
+        ?>
      
   
     <div class="image">

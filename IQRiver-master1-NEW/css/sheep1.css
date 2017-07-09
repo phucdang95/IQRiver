@@ -18,7 +18,7 @@ body{
 }
 .boat2{
     width: 250px;
-  position:absolute; bottom: 200px; right: 340px; z-index: 1;
+  position:absolute; bottom: 190px; right: 340px; z-index: 1;
   animation: mymove 5s;
   animation-fill-mode: forwards;
   }
@@ -172,7 +172,11 @@ position: absolute;right: 0;
     font-weight:bold;
   color: red;
 }
-
+span {
+    color:red;
+    text-transform: uppercase;
+    
+}
 /* End game message! */
 #element{
     -webkit-animation: 7s ease 0s normal forwards 1 fadein;
@@ -198,7 +202,7 @@ position: absolute;right: 0;
     font-family: helvetica, arial, sans-serif;
     padding: 40px 20px;
     text-align: center;
-    width: 100%;
+    width: auto;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 30px;

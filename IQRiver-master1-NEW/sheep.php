@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <html>
     <head>
        <link rel='stylesheet' type='text/css' href='sheep.css' />
@@ -6,9 +8,12 @@
     <title>IQ River Crossing</title>
     </head>
     <body>   
-        
+        <?php
+         echo  "<h1> WELCOME, <span>" . $_SESSION['n']."</span></h1>";
+       
+        ?>
    
-    <div class="image">        
+    <div class="image">       
  <a href="boatback.php"><img class="boat2" src="images/sailing.png" alt=""></a>
  <a href=""><img class="cabbage" src="images/cabbage.png" alt=""></a>
  <a href=""><img class="sheep" src="images/sheep.png" alt=""></a>

@@ -18,7 +18,7 @@ body{
 }
 .boat2{
     width: 250px;
-  position:absolute; bottom: 200px; right: 340px; z-index: 1;
+  position:absolute; bottom: 190px; right: 340px; z-index: 1;
   animation: mymove 5s;
   animation-fill-mode: forwards;
   }
@@ -43,7 +43,11 @@ width: 200px;
  height:auto;
  max-height:100%;
 }
-
+span {
+    color:red;
+    text-transform: uppercase;
+    
+}
    
     
 
