@@ -10,7 +10,7 @@ body{
 }
 
 h1, h2, h3, h4, h5 ,h6{
-  
+
     font-family: "lato-regular", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
 }
@@ -23,17 +23,17 @@ h6              { font-size: .75em; margin: 1.67em 0 }
 h1, h2, h3, h4,
 h5, h6          { font-weight: bolder }
 
-.clearfix:before,  
-.clearfix:after {  
-    content: " ";  
-    display: table;  
-}  
-.clearfix:after {  
-    clear: both;  
-}  
- 
-.clearfix {  
-    *zoom: 1;  
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
 }
 
 
@@ -49,7 +49,7 @@ header .logo{
     margin-top: 30px;
     float: left;
     color:#f60e0e;
-    
+
 }
 
 header a.hamburger{
@@ -79,7 +79,7 @@ header nav ul{
     list-style: none;
     overflow: hidden;
     float: left;
-    
+
 }
 header nav a {
     text-decoration: none;
@@ -90,7 +90,7 @@ header nav ul li{
     margin-left: 80px;
     font-size:30px;
     color:black;
-    
+
 }
 
 header nav ul li a,
@@ -117,13 +117,13 @@ header nav .login_btn{
     -webkit-transition: background .1s linear;
     -moz-transition: background .1s linear;
     -o-transition: background .1s linear;
-    
+
 }
 
 header nav .login_btn:hover{
     background: #ffffff;
     color: #0630f6;
-    
+
 
 }
 
@@ -177,7 +177,9 @@ header nav .login_btn:hover{
 /*  Search box */
 .search{
     width: 100%;
-    
+    margin: auto;
+    width: 50%;
+
     position: relative;
 }
 
@@ -187,20 +189,21 @@ header nav .login_btn:hover{
 .search .advanced_search #min_price,
 .search .advanced_search #max_price{
     display: block;
-    width: 509px;
+    width: 209px;
     height: 80px;
     border: 0;
     margin: 0;
     padding: 0 20px;
     outline: none;
-   
+
 }
 
 .search .advanced_search #check_in_date,
 .search .advanced_search #check_out_date{
-   
+
     padding: 0 100px 0 20px;
-    width: 429px;
+    width: 129px;
+
 }
 
 .search .advanced_search .float{
@@ -209,7 +212,6 @@ header nav .login_btn:hover{
 
 .search .advanced_search .search_fields{
     overflow: hidden;
-    border-bottom: 1px solid #aac8e4;
 }
 
 .search .advanced_search .field_sep{
@@ -217,75 +219,46 @@ header nav .login_btn:hover{
     width: 1px;
     height: 60px;
     border: 0;
-    background: #aac8e4;
-    margin: 20px 0 0 0;
+    background: red;
+    margin: 10px 0 0 0;
     padding: 0;
 }
 
 .search .advanced_search #keywords{
     display: block;
-    width: 1000px;
+    width: 500px;
     height: 80px;
     border: 0;
     margin: 0;
     padding: 0 20px;
     outline: none;
-   
+
 }
 
 .search .advanced_search #check_in_date,
 .search .advanced_search #check_out_date,
 .search .advanced_search #min_price,
 .search .advanced_search #max_price,
-.search .advanced_search #keywords{    
+.search .advanced_search #keywords{
     color: black;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 1px;
     line-height: 22px;
-} 
-
-
-.search .advanced_search #check_in_date::-webkit-input-placeholder,
-.search .advanced_search #check_out_date::-webkit-input-placeholder,
-.search .advanced_search #min_price::-webkit-input-placeholder,
-.search .advanced_search #max_price::-webkit-input-placeholder,
-.search .advanced_search #keywords::-webkit-input-placeholder{
-   color: #95badf;
 }
 
-.search .advanced_search #check_in_date:-moz-placeholder, 
-.search .advanced_search #check_out_date:-moz-placeholder, 
-.search .advanced_search #min_price:-moz-placeholder, 
-.search .advanced_search #max_price:-moz-placeholder, 
-.search .advanced_search #keywords:-moz-placeholder{ 
-   color: #95badf;  
+
+
+.btt{
+  margin: auto;
+    width: 20%;
+    border: 3px solid red;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    left: 35%;
+        top: 100%;
 }
-
-.search .advanced_search #check_in_date::-moz-placeholder, 
-.search .advanced_search #check_out_date::-moz-placeholder, 
-.search .advanced_search #min_price::-moz-placeholder, 
-.search .advanced_search #max_price::-moz-placeholder, 
-.search .advanced_search #keywords::-moz-placeholder{ 
-   color: #95badf;  
-}
-
-.search .advanced_search #check_in_date:-ms-input-placeholder,  
-.search .advanced_search #check_out_date:-ms-input-placeholder,  
-.search .advanced_search #min_price:-ms-input-placeholder,  
-.search .advanced_search #max_price:-ms-input-placeholder,  
-.search .advanced_search #keywords:-ms-input-placeholder{  
-   color: #95badf;  
-} 
-
-
-
-
-
-
-
-
 
 
 
@@ -413,7 +386,7 @@ header nav .login_btn:hover{
 
 .listings .more_listing_btn:hover{
     color: #a0c3e5;
-    border: 2px solid #a0c3e5;    
+    border: 2px solid #a0c3e5;
 }
 
 
@@ -480,7 +453,7 @@ header nav .login_btn:hover{
 
     .hero .caption{
         width: 92.72727272727273%;
-        padding: 0 3.636363636363636%; 
+        padding: 0 3.636363636363636%;
     }
 
     .hero .caption h3{
@@ -575,7 +548,7 @@ header nav .login_btn:hover{
         margin-right: 0;
     }
 
-   
+
 }
 
 
@@ -641,7 +614,7 @@ header nav .login_btn:hover{
 
     .listings .more_listing_btn{
         display: block;
-        width: 100%; 
+        width: 100%;
         padding-left: 0!important;
         padding-right: 0!important;
     }
