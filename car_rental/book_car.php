@@ -37,47 +37,17 @@
 						<h2>Model: <span class="property_size"><?php echo $rws['car_name'];?></span></h2>
 					</div>
 				</li>
+				
 				<h3>You picked:   <?php echo $rws['car_name'];?> </h3>
 				<?php
 					if(!$_SESSION['email'] && (!$_SESSION['pass'])){
+                    echo "<script type = \"text/javascript\">
+									alert(\"Please Log-in.\");
+									window.location = (\"account.php\")
+									</script>";
+                                    
+
 				?>
-				<form method="post">
-					<table>
-						<tr>
-							<td>Full Name:</td>
-							<td><input type="text" name="fname" required></td>
-						</tr>
-						<tr>
-							<td>Phone Number:</td>
-							<td><input type="text" name="phone" required></td>
-						</tr>
-						<tr>
-							<td>Email Address:</td>
-							<td><input type="email" name="email" required></td>
-						</tr>
-						<tr>
-							<td>ID Number:</td>
-							<td><input type="text" name="id_no" required></td>
-						</tr>
-						<tr>
-							<td>Gender:</td>
-							<td>
-								<select name="gender">
-									<option> Select Gender </option>
-									<option> Male </option>
-									<option> Female </option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>Location:</td>
-							<td><input type="text" name="location" required></td>
-						</tr>
-						<tr>
-							<td colspan="2" style="text-align:right"><input type="submit" name="save" value="Submit Details"></td>
-						</tr>
-					</table>
-				</form>
 				<?php
 					} else
 						{

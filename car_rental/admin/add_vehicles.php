@@ -6,14 +6,14 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 	<script type="text/javascript">
 		function sureToApprove(id){
-			if(confirm("Are you sure you want to delete this car?")){
+			if(confirm("Are you sure you want to remove this car?")){
 				window.location.href ='delete_car.php?id='+id;
 			}
 		}
 	</script>
 </head>
 <body>
-<!-- Header -->
+
 <div id="header">
 	<div class="shell">
 
@@ -21,7 +21,7 @@
 			include 'menu.php';
 		?>
 		</div>
-		<!-- End Main Nav -->
+		
 	</div>
 </div>
 
@@ -36,6 +36,7 @@
 			<div id="content">
 
 				<div class="box">
+
 					<!-- Box Head -->
 					<div class="box-head">
 						<h2 class="left">Automobile List</h2>

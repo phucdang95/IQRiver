@@ -19,23 +19,23 @@
 
 			
 	</section>
-
+    <br><Br>
 	<section class="search">
 		<div class="wrapper">
 		<div id="fom">
 			<form method="post">
-			<h2 style="text-align:center; color: #000099; font-weight:bold; ">Admin Login</h2>
+			<h2 style="text-align:center; color: #000099; font-weight:bold; ">Admin Login</h2><br>
 				<table height="100" align="center">
 					<tr>
 						<td>Email Address:</td>
-						<td><input type="text" name="uname" placeholder="Enter Username" required></td>
-					</tr>
+						<td><input type="text" name="uname" required></td>
+					</tr><Br>
 					<tr>
 						<td>Password:</td>
-						<td><input type="password" name="pass" placeholder="Enter Password" required></td>
+						<td><input type="password" name="pass"  required></td>
 					</tr>
 					<tr>
-						<td colspan="2" style="text-align:center"><input type="submit" name="login" value="Login Here"></td>
+						<td colspan="2" style="text-align:center"><input type="submit" name="login" value="Login"></td>
 					</tr>
 				</table>
 			</form>
@@ -55,12 +55,12 @@
 						$_SESSION['uname'] = $rows['uname'];
 						$_SESSION['pass'] = $rows['pass'];
 						echo "<script type = \"text/javascript\">
-									alert(\"Login Successful.................\");
+									alert(\"Login Successful!!\");
 									window.location = (\"admin/index.php\")
 									</script>";
 					} else{
 						echo "<script type = \"text/javascript\">
-									alert(\"Login Failed. Try Again................\");
+									alert(\"Login Failed. Try Again.\");
 									window.location = (\"login.php\")
 									</script>";
 					}

@@ -1,21 +1,7 @@
-$(document).ready(function(){
 
 
 
-
-	/*  Hamburger Menu & Icon  */
-	$('.hamburger').on('click', function(e){
-		
-		e.preventDefault();
-		$(this).toggleClass('opned');
-		$('header nav').toggleClass('active');
-		
-	});
-
-
-
-
-	/*  Advanced search form & Icon  */
+	
 	$('#advanced_search_btn').on("click", function(e){
 		e.preventDefault();
 

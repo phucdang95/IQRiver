@@ -25,7 +25,7 @@
 		<div class="wrapper">
 		<div id="fom">
 			<form method="post">
-			<h2 style="text-align:center; font-weight:bold; "> Login </h2>
+			<h2 style="text-align:center; font-weight:bold; "> Login </h2><Br>
 				<table height="200" align="center">
 					<tr>
 						<td>Email Address: </td>
@@ -57,12 +57,12 @@
 						$_SESSION['email'] = $row['email'];
 						$_SESSION['pass'] = $row['id_no'];
 						echo "<script type = \"text/javascript\">
-									alert(\"Login Successful.................\");
+									alert(\"Login Successful!!\");
 									window.location = (\"index.php\")
 									</script>";
 					} else{
 						echo "<script type = \"text/javascript\">
-									alert(\"Login Failed. Try Again................\");
+									alert(\"Login Failed. Try Again.\");
 									window.location = (\"account.php\")
 									</script>";
 					}
