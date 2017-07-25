@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Sonko Car Rental</title>
+	<title>Luxury Rental</title>
 	<meta charset="utf-8">
-	<meta name="author" content="pixelhint.com">
-	<meta name="description" content="La casa free real state fully responsive html5/css3 home page website template"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	
     <link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -34,11 +32,11 @@
 				<span class="arrow"></span>
 				<form action="#" method="post">
 					<div class="search_fields">
-						<input type="text" class="float" id="check_in_date" name="check_in_date" placeholder="Check In Date"  autocomplete="off">
+						<input type="text" class="float" id="check_in_date" name="check_in_date" placeholder="Rental From"  autocomplete="off">
 
 						<hr class="field_sep float"/>
 
-						<input type="text" class="float" id="check_out_date" name="check_out_date" placeholder="Check Out Date"  autocomplete="off">
+						<input type="text" class="float" id="check_out_date" name="check_out_date" placeholder="Rental To"  autocomplete="off">
 					</div>
 					<div class="search_fields">
 						<input type="text" class="float" id="min_price" name="min_price" placeholder="Min. Price"  autocomplete="off">
@@ -46,15 +44,17 @@
 						<hr class="field_sep float"/>
 
 						<input type="text" class="float" id="max_price" name="max_price" placeholder="Max. price"  autocomplete="off">
-					</div>
-					<input type="text" id="keywords" name="keywords" placeholder="Keywords"  autocomplete="off">
-					<input type="submit" id="submit_search" name="submit_search"/>
+					</div  style ="text-align:center">
+					<input type="text" id="keywords" name="keywords" placeholder="SEARCH"  autocomplete="off">
+					
+                    <input class="btt" type="submit" id="searchButton" value="Search"/>
 				</form>
 			</div>
-		</div><!--  end advanced search section  -->
-	</section><!--  end search section  -->
-	</section><!--  end hero section  -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+	</section>
+	</section>
+    
+
 
 	<section class="listings">
 		<div class="wrapper">
@@ -69,7 +69,7 @@
 					<a href="book_car.php?id=<?php echo $rws['car_id'] ?>">
 						<img class="thumb" src="cars/<?php echo $rws['image'];?>" width="300" height="200">
 					</a>
-					<span class="price"><?php echo '$'.$rws['hire_cost'];?></span>
+					<span class="price"><?php echo '$'.$rws['hire_cost'].'/day' ;?></span>
 					<div class="property_details">
 						<h1>
 							<a href="book_car.php?id=<?php echo $rws['car_id'] ?>"><?php echo 'Car Make>'.$rws['car_type'];?></a>

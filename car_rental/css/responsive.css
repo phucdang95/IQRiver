@@ -181,56 +181,6 @@ header nav .login_btn:hover{
     position: relative;
 }
 
-.search #search{
-    display: block;
-    width: 90.90909090909091%;
-    float: left;
-    border: 0;
-    outline: none;
-    margin: 0;
-    padding: 0;
-   
-    
-    color: #ffffff;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 22px;
-}
-
-.search #search::-webkit-input-placeholder{
-   color: #95badf;
-}
-
-.search #search:-moz-placeholder{ 
-   color: #95badf;  
-}
-
-.search #search::-moz-placeholder{ 
-   color: #95badf;  
-}
-
-.search #search:-ms-input-placeholder{  
-   color: #95badf;  
-} 
-
-.search #submit_search{
-    display: none;
-}
-
-
-.search .advanced_search{
-    width: 100%;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    background: #cbe0f4;
-    border-top: 1px solid #aac8e4;
-    border-bottom: 1px solid #aac8e4;
-    z-index: 9999;
-    
-}
 
 .search .advanced_search #check_in_date,
 .search .advanced_search #check_out_date,
@@ -238,18 +188,17 @@ header nav .login_btn:hover{
 .search .advanced_search #max_price{
     display: block;
     width: 509px;
-    height: 100px;
+    height: 80px;
     border: 0;
     margin: 0;
     padding: 0 20px;
     outline: none;
-    background: #cbe0f4;
+   
 }
 
 .search .advanced_search #check_in_date,
 .search .advanced_search #check_out_date{
-    background: url('../img/calendar_icon.png') no-repeat;
-    background-position: 484px 50%;
+   
     padding: 0 100px 0 20px;
     width: 429px;
 }
@@ -275,13 +224,13 @@ header nav .login_btn:hover{
 
 .search .advanced_search #keywords{
     display: block;
-    width: 1060px;
-    height: 100px;
+    width: 1000px;
+    height: 80px;
     border: 0;
     margin: 0;
     padding: 0 20px;
     outline: none;
-    background: #cbe0f4;
+   
 }
 
 .search .advanced_search #check_in_date,
@@ -289,9 +238,9 @@ header nav .login_btn:hover{
 .search .advanced_search #min_price,
 .search .advanced_search #max_price,
 .search .advanced_search #keywords{    
-    color: #ffffff;
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 22px;

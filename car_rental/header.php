@@ -4,7 +4,7 @@
 ?>
 <header>
 			<div class="wrapper">
-				<h1 class="logo">G-Rental</h1>
+				<h1 class="logo">Luxury Rental</h1>
 				
 				<nav>
 
