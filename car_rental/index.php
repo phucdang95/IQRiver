@@ -3,7 +3,7 @@
 <head>
 	<title>Luxury Rental</title>
 	<meta charset="utf-8">
-	
+
     <link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -17,12 +17,12 @@
 			include 'header.php';
 		?>
 
-			
+
             <section class="search">
 		<div class="wrapper">
 			<form action="#" method="post">
-				
-				
+
+
 			</form>
 			<a href="#" class="advanced_search_icon" id="advanced_search_btn"></a>
 		</div>
@@ -45,15 +45,15 @@
 
 						<input type="text" class="float" id="max_price" name="max_price" placeholder="Max. price"  autocomplete="off">
 					</div  style ="text-align:center">
-					<input type="text" id="keywords" name="keywords" placeholder="SEARCH"  autocomplete="off">
-					
+					<input type="text" id="keywords" name="keywords" placeholder="MODEL"  autocomplete="off">
+
                     <input class="btt" type="submit" id="searchButton" value="Search"/>
 				</form>
 			</div>
 		</div>
 	</section>
 	</section>
-    
+
 
 
 	<section class="listings">
@@ -71,10 +71,8 @@
 					</a>
 					<span class="price"><?php echo '$'.$rws['hire_cost'].'/day' ;?></span>
 					<div class="property_details">
-						<h1>
-							<a href="book_car.php?id=<?php echo $rws['car_id'] ?>"><?php echo 'Car Make>'.$rws['car_type'];?></a>
-						</h1>
-						<h2>Car Name/Model: <span class="property_size"><?php echo $rws['car_name'];?></span></h2>
+
+						<h2>Model: <span class="property_size"><?php echo $rws['car_name'];?></span></h2>
 					</div>
 				</li>
 			<?php
@@ -84,6 +82,6 @@
 		</div>
 	</section>	<!--  end listing section  -->
 
-	
+
 </body>
 </html>

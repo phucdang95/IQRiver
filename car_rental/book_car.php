@@ -3,7 +3,7 @@
 <head>
 	<title>S</title>
 	<meta charset="utf-8">
-	
+
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -16,9 +16,9 @@
 		<?php
 			include 'header.php';
 		?>
-        		
+
 	</section><!--  end hero section  -->
-	
+
 	<section class="listings">
 		<div class="wrapper">
 			<ul class="properties_list">
@@ -34,10 +34,7 @@
 					</a>
 					<span class="price"><?php echo '$'.$rws['hire_cost'];?></span>
 					<div class="property_details">
-						<h1>
-							<a href="book_car.php?id=<?php echo $rws['car_id'] ?>"><?php echo 'Car Make>'.$rws['car_type'];?></a>
-						</h1>
-						<h2>Car Model: <span class="property_size"><?php echo $rws['car_name'];?></span></h2>
+						<h2>Model: <span class="property_size"><?php echo $rws['car_name'];?></span></h2>
 					</div>
 				</li>
 				<h3>You picked:   <?php echo $rws['car_name'];?> </h3>
@@ -98,7 +95,7 @@
 							$email = $_POST['email'];
 							$phone = $_POST['phone'];
 							$location = $_POST['location'];
-							
+
 							$qry = "INSERT INTO client (fname,id_no,gender,email,phone,location,car_id,status)
 							VALUES('$fname','$id_no','$gender','$email','$phone','$location','$_GET[id]','Pending')";
 							$result = $conn->query($qry);
@@ -114,12 +111,12 @@
 											</script>";
 							}
 						}
-						
+
 					  ?>
 			</ul>
 		</div>
 	</section>	<!--  end listing section  -->
 
-	
+
 </body>
 </html>
