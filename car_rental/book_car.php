@@ -30,15 +30,16 @@
 			?>
 				<li>
 					<a href="book_car.php?id=<?php echo $rws['car_id'] ?>">
-						<img class="thumb" src="cars/<?php echo $rws['image'];?>" width="300" height="200">
+						<img class="thumb" style="border-radius:50px" src="cars/<?php echo $rws['image'];?>" width="360" height="240">
 					</a>
 					<span class="price"><?php echo '$'.$rws['hire_cost'];?></span>
 					<div class="property_details">
+                        <h2> Year/Make: <span class="property_size"><?php echo $rws['car_type'];?></span></h2>
 						<h2>Model: <span class="property_size"><?php echo $rws['car_name'];?></span></h2>
 					</div>
 				</li>
 				
-				<h3>You picked:   <?php echo $rws['car_name'];?> </h3>
+				<h3>You picked:  <?php echo $rws['car_type']." ";  echo $rws['car_name'];?> </h3>
 				<?php
 					if(!$_SESSION['email'] && (!$_SESSION['pass'])){
                     echo "<script type = \"text/javascript\">

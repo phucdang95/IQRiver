@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Sonko Car Rental</title>
+	<title>Luxuary rental</title>
 	<meta charset="utf-8">
 	
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -9,6 +9,17 @@
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+    <link href="creditcard/creditCardTypeDetector.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="creditcard/jquery.creditCardTypeDetector.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$('#checkout_card_number').creditCardTypeDetector({ 'credit_card_logos' : '.card_logos' });
+			});
+		</script>
+
+
 </head>
 <body>
 
@@ -17,58 +28,82 @@
 			include 'header.php';
 		?>
 
-		
+	</section>	<br>
+    <h1>Confirm Payment</h1><br>
+	  <label for="owner">Name on Card: </label>
+	   <input type="text" class="form-control" id="owner"></br><br>
+	    <label for="checkout_card_number">Card Number: </label>
+
+	<input id="checkout_card_number" type="text" size="20" pattern="[0-9]*" autocomplete="off" class="stripe_card_number" required="required" />
+    
+	<div><ul class="card_logos">
+		<li class="card_visa">Visa</li>
+		<li class="card_mastercard">Mastercard</li>
+		<li class="card_amex">American Express</li>
+		<li class="card_discover">Discover</li>
+		<li class="card_jcb">JCB</li>
+		<li class="card_diners">Diners Club</li>
+	</ul>
+    </div>
+	<br>
+
+	                       
+
+	                 
+	                    
+	                        <label>Expiration Date: </label>
+	                        <select>
+	                            <option value="01">January</option>
+	                            <option value="02">February </option>
+	                            <option value="03">March</option>
+	                            <option value="04">April</option>
+	                            <option value="05">May</option>
+	                            <option value="06">June</option>
+	                            <option value="07">July</option>
+	                            <option value="08">August</option>
+	                            <option value="09">September</option>
+	                            <option value="10">October</option>
+	                            <option value="11">November</option>
+	                            <option value="12">December</option>
+	                        </select>
+	                        <select>
+	                           
+	                            <option value="17"> 2017</option>
+	                            <option value="18"> 2018</option>
+	                            <option value="19"> 2019</option>
+	                            <option value="20"> 2020</option>
+	                            <option value="21"> 2021</option>
+	                        </select>&nbsp;
+
+	                     <label for="cvv">CVV: </label>
+	                        <input type="text" class="form-control" id="cvv" size=1> <br><br><Br>
+
+	                       <div><h2>Billing Address</h2>
+	                        Street Address: <input type="text" class="form-control" ><br>
+
+	                        <br><label>City: </label>
+	                        <input type="text" class="form-control" size=10 >
+	                        &nbsp;
+	                      <label>State: </label>
+	                        <input type="text" class="form-control" size=2 >
+                            &nbsp;
+	                        <label>Zip Code: </label>
+	                        <input type="text" class="form-control" size=4 ><Br><br>
+	                        
+	                        <label >Phone: </label>
+	                        <input type="text" class="form-control" >
+
+	                   <div class="form-group" id="pay-now"> <Br><br>
+	                       <button type="submit" name= "pay"  id="confirm-purchase" onClick="Javascript:window.location.href = 'wait.php';">Submit</button>
+                           	
+	                    </div>
+	               	           
+                        
 
 
-	<section class="listings">
-		<div class="wrapper">
-			<ul class="properties_list">
-				<h2>Make a Payment </h2>
-				<h5>Paybill Number: 00000</h5>
-				<h6>Business Number: ID Number Registered with.</h6>
-				<form method="post">
-					<table>
-						<tr>
-							<td>MPESA Transaction ID:</td>
-							<td><input type="text" name="mpesa" required></td>
-						</tr>
-						<tr>
-							<td>National ID Number:</td>
-							<td><input type="text" name="id_no" required></td>
-						</tr>
-						
-						<tr>
-							<td colspan="2" style="text-align:right"><input type="submit" name="pay" value="Submit"></td>
-						</tr>
-					</table>
-				</form>
-				<?php
-						if(isset($_POST['pay'])){
-							include 'includes/config.php';
-							$mpesa = $_POST['mpesa'];
-							$id_no = $_POST['id_no'];
-							
-							$qry = "UPDATE client SET mpesa = '$mpesa' WHERE id_no = '$id_no'";
-							$result = $conn->query($qry);
-							if($result == TRUE){
-								echo "<script type = \"text/javascript\">
-											alert(\"Payment Successfully Done. Wait for Admin Approval\");
-											window.location = (\"wait.php\")
-											</script>";
-							} else{
-								echo "<script type = \"text/javascript\">
-											alert(\"Payment approval Failed. Try Again\");
-											window.location = (\"pay.php\")
-											</script>";
-							}
-						}
-						
-					  ?>
-			</ul>
-			<div class="more_listing">
-				<a href="#" class="more_listing_btn">View More Listings</a>
-			</div>
-		</div>
 	
+				
+			
+			
 </body>
 </html>

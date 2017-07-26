@@ -49,8 +49,8 @@
 						<table width="100%" border="0" cellspacing="0" cellpadding="0">
 							<tr>
 								<th width="13"><input type="checkbox" class="checkbox" /></th>
-								<th>Vehicle Make</th>
-								<th>Car Type</th>
+								<th>Vehicle Year/Make</th>
+								<th>Car Model</th>
 								<th>Price</th>
 								<th width="110" class="ac">Setting</th>
 							</tr>

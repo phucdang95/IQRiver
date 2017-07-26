@@ -26,7 +26,7 @@
 				<h3 style="text-align:center; color:blue; ">Thank you for shopping with Luxury Rental.<br> 
 				We will send you an email upon approval of your request.<br><h3>
 
-				<h3 style="color:black; text-align:center;">You can see your order status on your main page</h3>
+				
 			</ul>
 			
 		</div>

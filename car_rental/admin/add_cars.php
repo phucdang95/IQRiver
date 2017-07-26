@@ -43,16 +43,17 @@
 					<form action="" method="post" enctype="multipart/form-data">
 						
 						<div class="form">
-								<p>
+                                <p>
 									<span class="req"></span>
-									<label>Vehicle Name <span>(Required Field)</span></label>
-									<input type="text" class="field size1" name="car_name" required />
-								</p>	
-								<p>
-									<span class="req"></span>
-									<label>Vehicle Make <span>(Required Field)</span></label>
+									<label>Vehicle Year/Make <span>(Required Field)</span></label>
 									<input type="text" class="field size1" name="car_type" required />
 								</p>
+								<p>
+									<span class="req"></span>
+									<label>Vehicle Model <span>(Required Field)</span></label>
+									<input type="text" class="field size1" name="car_name" required />
+								</p>	
+								
 								<p>
 									<span class="req"></span>
 									<label>Price <span>(Required Field)</span></label>
