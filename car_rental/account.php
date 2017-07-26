@@ -3,7 +3,7 @@
 <head>
 	<title>Luxury Rental</title>
 	<meta charset="utf-8">
-		
+
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -17,7 +17,7 @@
 			include 'header.php';
 		?>
 
-			
+
 	</section>
 
     <br><br>
@@ -44,10 +44,10 @@
 			<?php
 				if(isset($_POST['log'])){
 					include 'includes/config.php';
-					
+
 					$uname = $_POST['email'];
 					$pass = $_POST['pass'];
-					
+
 					$qy = "SELECT * FROM client WHERE email = '$uname' AND id_no = '$pass'";
 					$log = $conn->query($qy);
 					$num = $log->num_rows;

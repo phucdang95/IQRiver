@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>S</title>
+	<title>Luxury Rental</title>
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -38,7 +38,7 @@
 						<h2>Model: <span class="property_size"><?php echo $rws['car_name'];?></span></h2>
 					</div>
 				</li>
-				
+
 				<h3>You picked:  <?php echo $rws['car_type']." ";  echo $rws['car_name'];?> </h3>
 				<?php
 					if(!$_SESSION['email'] && (!$_SESSION['pass'])){
@@ -46,7 +46,7 @@
 									alert(\"Please Log-in.\");
 									window.location = (\"account.php\")
 									</script>";
-                                    
+
 
 				?>
 				<?php

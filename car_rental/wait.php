@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Sonko Car Rental</title>
+	<title>Luxury Rental</title>
 	<meta charset="utf-8">
-	
-	
+
+
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -19,20 +19,20 @@
 		?>
 
 		</section>
-        
+
 	<section class="listings">
 		<div class="wrapper">
 			<ul class="properties_list">
-				<h3 style="text-align:center; color:blue; ">Thank you for shopping with Luxury Rental.<br> 
+				<h3 style="text-align:center; color:blue; ">Thank you for shopping with Luxury Rental.<br>
 				We will send you an email upon approval of your request.<br><h3>
 
-				
-			</ul>
-			
-		</div>
-	</section>	
 
-	
-	
+			</ul>
+
+		</div>
+	</section>
+
+
+
 </body>
 </html>

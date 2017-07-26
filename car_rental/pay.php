@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Luxuary rental</title>
+	<title>Luxury rental</title>
 	<meta charset="utf-8">
-	
+
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -35,7 +35,7 @@
 	    <label for="checkout_card_number">Card Number: </label>
 
 	<input id="checkout_card_number" type="text" size="20" pattern="[0-9]*" autocomplete="off" class="stripe_card_number" required="required" />
-    
+
 	<div><ul class="card_logos">
 		<li class="card_visa">Visa</li>
 		<li class="card_mastercard">Mastercard</li>
@@ -47,10 +47,10 @@
     </div>
 	<br>
 
-	                       
 
-	                 
-	                    
+
+
+
 	                        <label>Expiration Date: </label>
 	                        <select>
 	                            <option value="01">January</option>
@@ -67,7 +67,7 @@
 	                            <option value="12">December</option>
 	                        </select>
 	                        <select>
-	                           
+
 	                            <option value="17"> 2017</option>
 	                            <option value="18"> 2018</option>
 	                            <option value="19"> 2019</option>
@@ -89,21 +89,21 @@
                             &nbsp;
 	                        <label>Zip Code: </label>
 	                        <input type="text" class="form-control" size=4 ><Br><br>
-	                        
+
 	                        <label >Phone: </label>
 	                        <input type="text" class="form-control" >
 
 	                   <div class="form-group" id="pay-now"> <Br><br>
 	                       <button type="submit" name= "pay"  id="confirm-purchase" onClick="Javascript:window.location.href = 'wait.php';">Submit</button>
-                           	
+
 	                    </div>
-	               	           
-                        
 
 
-	
-				
-			
-			
+
+
+
+
+
+
 </body>
 </html>

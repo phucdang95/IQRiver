@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>G-Rental</title>
+	<title>Luxury Rental</title>
 	<meta charset="utf-8">
-		
+
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -17,12 +17,12 @@
 			include 'header.php';
 		?>
 
-		
+
 	<section class="listings">
 		<div class="wrapper">
-			<div style="text-align:center;">	
+			<div style="text-align:center;">
 				<h3>Sign-up </h3>
-			
+
             <form method="post" >
 					Full Name: <input type="text" name="fname" required><br><br>
 					Phone Number: <input type="text" name="phone" required><br><br>
@@ -33,12 +33,12 @@
 									<option> Male </option>
 									<option> Female </option>
 								</select><br><br>
-							
-						
+
+
 					Location: <input type="text" name="location" required><Br><Br>
 					         <input type="submit" name="save" value="Submit">
-					
-				
+
+
 				</form>
                 </div>
 				<?php
@@ -50,7 +50,7 @@
 							$email = $_POST['email'];
 							$phone = $_POST['phone'];
 							$location = $_POST['location'];
-							
+
 							$qry = "INSERT INTO cars.client (fname,email,id_no,phone,location,gender,status)
 							VALUES('$fname','$email','$id_no','$phone','$location','$gender','Available')";
 							$result = $conn->query($qry);
@@ -66,11 +66,11 @@
 											</script>";
 							}
 						}
-						
+
 					  ?>
 			</ul>
 		</div>
-	</section>	
+	</section>
 
 
 </body>

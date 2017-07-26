@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Luxuary Rental</title>
+	<title>Luxury Rental</title>
 	<meta charset="utf-8">
-	
+
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -17,7 +17,7 @@
 			include 'header.php';
 		?>
 
-			
+
 	</section>
     <br><Br>
 	<section class="search">
@@ -42,10 +42,10 @@
 			<?php
 				if(isset($_POST['login'])){
 					include 'includes/config.php';
-					
+
 					$uname = $_POST['uname'];
 					$pass = $_POST['pass'];
-					
+
 					$query = "SELECT * FROM admin WHERE uname = '$uname' AND pass = '$pass'";
 					$rs = $conn->query($query);
 					$num = $rs->num_rows;
@@ -71,7 +71,7 @@
 		</div>
 
 	</section>
-	
-	
+
+
 </body>
 </html>

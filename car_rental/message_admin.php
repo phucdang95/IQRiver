@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Sonko Car Rental</title>
+	<title>Luxury Rental</title>
 	<meta charset="utf-8">
-	
+
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<style type="text/css">
@@ -52,9 +52,9 @@
 				<?php
 					if(isset($_POST['send'])){
 						include 'includes/config.php';
-						
+
 						$message = $_POST['message'];
-						
+
 						$qry = "INSERT INTO message (message,client_id,time,status)
 							VALUES('$message','$_SESSION[email]',NOW(),'Unread')";
 							$result = $conn->query($qry);
@@ -75,6 +75,6 @@
 		</div>
 	</section>
 
-	
+
 </body>
 </html>

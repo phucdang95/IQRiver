@@ -1,6 +1,6 @@
 
 body{
-    background: #fff;
+    background: #FEFEFA;
 }
 
 .wrapper{
@@ -11,7 +11,7 @@ body{
 
 h1, h2, h3, h4, h5 ,h6{
 
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     letter-spacing: 1px;
 }
 
@@ -36,11 +36,13 @@ h5, h6          { font-weight: bolder }
     *zoom: 1;
 }
 
-
+.login{
+  color:white;
+}
 header{
     width: 100%;
     height: 100px;
-    background: rgba(204, 232, 51, 0.20);
+    background: rgb(255, 91, 91);
     text-decoration: none;
 }
 
@@ -48,7 +50,7 @@ header .logo{
     font-size:40px;
     margin-top: 30px;
     float: left;
-    color:#f60e0e;
+    color:white;
 
 }
 
@@ -99,7 +101,7 @@ header nav .login_btn{
     text-decoration: none;
     color: black;
     font-weight:bold;
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
 
@@ -149,7 +151,7 @@ header nav .login_btn:hover{
 
 .hero .caption h2{
     color: #fff;
-    font-family: "p22_corinthia", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 100px;
     font-weight: lighter;
     margin: 0;
@@ -159,7 +161,7 @@ header nav .login_btn:hover{
 
 .hero .caption h3{
     color: #fff;
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 14px;
     margin: -15px 0 0 25px;
     left: 1px;
@@ -241,7 +243,7 @@ header nav .login_btn:hover{
 .search .advanced_search #max_price,
 .search .advanced_search #keywords{
     color: black;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     line-height: 22px;
@@ -295,7 +297,7 @@ header nav .login_btn:hover{
     padding: 15px 20px;
     background: #ffffff;
     color: #514d4d;
-    font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -332,7 +334,7 @@ header nav .login_btn:hover{
 
 .listings ul li .property_details h1{
     color: #666464;
-    font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px!important;
     font-weight: bold;
     margin-bottom: 5px;
@@ -346,7 +348,7 @@ header nav .login_btn:hover{
 
 .listings ul li .property_details h2{
     color: #9d9d9d;
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 12px;
     line-height: 26px;
     font-weight: normal;
@@ -372,7 +374,7 @@ header nav .login_btn:hover{
     -moz-border-radius: 30px;
     -o-border-radius: 30px;
     color: #afcbe6;
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;

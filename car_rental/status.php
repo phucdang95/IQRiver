@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title></title>
+	<title>Luxury Rental</title>
 	<meta charset="utf-8">
-	
-	
+
+
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<style type="text/css">
@@ -35,7 +35,7 @@
 						$rws = $rs->fetch_assoc();
 			?>
 				<li>
-						<h2"><span style="font-size:25px;">Status of :</span> 
+						<h2"><span style="font-size:25px;">Status of :</span>
                         <span style="color:red;; font-weight: bold; font-size: 25px;">
                             <?php echo $rws['status'];?></span></h2>
 				</li>
